@@ -1,0 +1,13 @@
+body {
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+#recados {
+    width:75vw;
+    margin-top:20px;
+}

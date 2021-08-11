@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/criar_conta.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+            rel="stylesheet"
+        />
+        <script defer src="./js/criar_conta.js"></script>
+
+        <title>Criar conta</title>
+    </head>
+    <body>
+        <div id="login_form">
+            <img id="logo" src="./img/logo.png" alt="" />
+            <h1><span id="version">v0.1-alpha</span></h1>
+            <form>
+                <label for="username">Digite o nome de usuário desejado:</label>
+                <input type="text" id="username" name="username" />
+                <label for="password">Digite a senha desejada:</label>
+                <input type="password" id="password" name="password" />
+                <label for="password_confirm">Digite a senha novamente:</label>
+                <input
+                    type="password"
+                    id="password_confirm"
+                    name="password_confirm"
+                />
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="criarConta()"
+                >
+                    Criar conta agora
+                </button>
+                <div class="alert alert-success" role="alert" id="success">
+                    Conta criada. Retorne a página inicial e realize o login.
+                </div>
+                <div
+                    class="alert alert-danger"
+                    role="alert"
+                    id="password_error"
+                >
+                    As senhas não são iguais. Tente novamente.
+                </div>
+                <div
+                    class="alert alert-danger"
+                    role="alert"
+                    id="username_error"
+                >
+                    Digite um nome de usuário.
+                </div>
+
+            </form>
+            <a href="./index.html">Voltar</a>
+        </div>
+    </body>
+</html>
